@@ -1,0 +1,33 @@
+{
+    "name": "waqar/otploginauthentication",
+    "description": "A simple modified otp authentication",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://github.com/WaqarHussainKhalid/web-otp-authentication"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "waqar\\otploginauthentication\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WaqarHussainKhalid",
+            "email": "waqarhussainkhalid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "waqar\\otploginauthentication\\OtpAuthenticationServiceProvider"
+            ]
+        }
+    }
+}
